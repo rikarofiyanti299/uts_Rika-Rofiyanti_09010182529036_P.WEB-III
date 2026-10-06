@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   TEMA PINK CEWE BLINK-BLINK 💖
+   ============================================ */
+
+@keyframes blink-glow {
+    0%, 100% { box-shadow: 0 0 8px #ec4899, 0 0 16px #f472b6; }
+    50% { box-shadow: 0 0 20px #ec4899, 0 0 40px #fbcfe8; }
+}
+
+@keyframes float-heart {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-8px) rotate(5deg); }
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+@keyframes sparkle {
+    0%, 100% { opacity: 0.3; transform: scale(0.8); }
+    50% { opacity: 1; transform: scale(1.2); }
+}
+
+.blink-btn { animation: blink-glow 1.8s infinite ease-in-out; }
+.float-icon { display: inline-block; animation: float-heart 2.5s infinite ease-in-out; }
+.sparkle { animation: sparkle 1.5s infinite ease-in-out; }
+
+.shimmer-text {
+    background: linear-gradient(90deg, #ec4899, #f472b6, #fbcfe8, #ec4899);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 3s linear infinite;
+}
+
+.pink-card {
+    background: white;
+    border: 2px solid #fbcfe8;
+    border-radius: 1.25rem;
+    box-shadow: 0 6px 25px rgba(236, 72, 153, 0.15);
+    transition: all 0.3s ease;
+}
+
+.pink-card:hover {
+    box-shadow: 0 10px 40px rgba(236, 72, 153, 0.35);
+    transform: translateY(-3px);
+}
+
+.pink-table th {
+    background: linear-gradient(135deg, #ec4899, #f472b6) !important;
+    color: white !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    padding: 12px;
+}
+
+.pink-table tr:hover { background-color: #fdf2f8; }
+
+.pink-input {
+    border: 2px solid #fbcfe8 !important;
+    border-radius: 0.75rem !important;
+    transition: all 0.3s ease;
+    padding: 0.65rem 0.9rem;
+    width: 100%;
+    background: white;
+}
+
+.pink-input:focus {
+    border-color: #ec4899 !important;
+    box-shadow: 0 0 0 4px rgba(236, 72, 153, 0.2) !important;
+    outline: none;
+}
+
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #fce7f3; }
+::-webkit-scrollbar-thumb { background: #ec4899; border-radius: 5px; }
+::-webkit-scrollbar-thumb:hover { background: #db2777; }
