@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -83,3 +84,16 @@
 ::-webkit-scrollbar-track { background: #fce7f3; }
 ::-webkit-scrollbar-thumb { background: #ec4899; border-radius: 5px; }
 ::-webkit-scrollbar-thumb:hover { background: #db2777; }
+=======
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+>>>>>>> 2895cdc238ab8194246109497b428a73ba91a3bd
